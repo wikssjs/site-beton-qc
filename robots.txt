@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /soumission-beton/
+Crawl-delay: 3
+
+Sitemap: https://prix-beton.ca/sitemap-index.xml
