@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 188 44" fill="none">
+  <!-- staggered brick pattern -->
+  <rect x="0"  y="0"  width="28" height="9" rx="1.5" fill="#44403c"/>
+  <rect x="4"  y="11" width="28" height="9" rx="1.5" fill="#44403c" opacity=".75"/>
+  <rect x="0"  y="22" width="28" height="9" rx="1.5" fill="#44403c" opacity=".5"/>
+  <!-- highlight line on top brick -->
+  <rect x="0" y="0" width="28" height="2" rx="1" fill="#78716c" opacity=".5"/>
+  <!-- text -->
+  <text x="40" y="19" font-family="system-ui,-apple-system,sans-serif" font-size="13" font-weight="400" fill="#57534e" letter-spacing="0.5">PRIX</text>
+  <text x="40" y="36" font-family="system-ui,-apple-system,sans-serif" font-size="17" font-weight="700" fill="#1c1917" letter-spacing="-0.3">Béton</text>
+</svg>
