@@ -156,7 +156,7 @@
       <div class="bt-hero__kicker">
         <span class="bt-badge-brand">
           <span class="bt-pulse" style="width:.4rem;height:.4rem;border-radius:50%;background:var(--accent);display:inline-block;flex-shrink:0"></span>
-          14 projets de beton soumis cette semaine
+          5 projets de beton soumis cette semaine
         </span>
       </div>
 
@@ -757,7 +757,7 @@ Le choix d'un entrepreneur béton fiable à Notre-Dame-de-Lourdes commence par l
         </p>
         <div class="bt-footer__pulse-row">
           <span class="bt-pulse" style="width:.4375rem;height:.4375rem;border-radius:9999px;background:var(--p500);display:inline-block"></span>
-          14 projets de beton soumis cette semaine
+          5 projets de beton soumis cette semaine
         </div>
       </div>
 
@@ -872,36 +872,6 @@ function prevStep(n) { showStep(n); }
 var _form = document.getElementById('empire-form');
 if (_form) {
   _form.addEventListener('submit', function(e) {
-    e.preventDefault();
-    var data = new FormData(_form);
-    fetch('/', {
-      method: 'POST',
-      headers: {'Content-Type': 'application/x-www-form-urlencoded'},
-      body: new URLSearchParams(data).toString()
-    }).then(function() {
-      document.querySelectorAll('.bt-form-step').forEach(function(s) { s.classList.remove('active'); });
-      var merci = document.getElementById('step-merci');
-      if (merci) merci.classList.add('active');
-      _updateDots(_totalSteps + 1);
-      if (typeof gtag !== 'undefined') {
-        gtag('event', 'lead_qualifie', {event_category: 'lead', event_label: 'Notre-Dame-de-Lourdes', event_value: 1});
-      }
-    }).catch(function() { _form.submit(); });
-  });
-}
-
-var _stickyBar = document.getElementById('sticky-bar');
-if (_stickyBar) {
-  var _formEl = document.getElementById('formulaire');
-  window.addEventListener('scroll', function() {
-    if (_formEl) {
-      var rect = _formEl.getBoundingClientRect();
-      _stickyBar.style.display = (rect.top < window.innerHeight && rect.bottom > 0) ? 'none' : '';
-    }
-  }, {passive: true});
-}
-</script></body>
-</html> _form.addEventListener('submit', function(e) {
     e.preventDefault();
     var data = new FormData(_form);
     fetch('/', {
